@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # Local
     "pages.apps.PagesConfig",
+    "accounts.apps.AccountsConfig",
+
 ]
 
 MIDDLEWARE = [
@@ -85,6 +87,8 @@ DATABASES = {
         "PORT": 5432,  # default postgres port
     }
 }
+
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 
 # Password validation
